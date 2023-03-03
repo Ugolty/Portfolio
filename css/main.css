@@ -69,3 +69,45 @@ body{
     margin: 0;
     background-color: #F2F4F3;
 }
+
+footer{
+    background-color: #22333B;
+    color: #F2F4F3;
+    justify-content: center;
+    font-size: large;
+}
+
+footer .contact{
+    padding: 10px 10%;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: #F2F4F3;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.top_footer{
+    display: flex;
+    padding: 10px;
+    height: 200px;
+}
+
+.top_footer .line{
+    width: 1px;
+    background-color: #F2F4F3;
+    height: 150px;
+    margin: 25px 5%;
+}
+
+.bottom_footer{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #0A0908;
+}
