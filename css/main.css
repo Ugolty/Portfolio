@@ -5,28 +5,16 @@
 header{
     background-color: #5E503F;
     color: #F2F4F3;
-    display: flex;
-    justify-content: center;
-    height: 130px;
 }
 
 .profile{
     display: flex;
-    padding-top: 30px;
-    min-width: 360px;
+    padding: 30px 0;
 }
 
 .profile h1{
     font-size: 40px;
-    padding: 10px 0 0 10%;
     white-space: nowrap;
-}
-
-.menu{
-    display: flex;
-    padding: 80px 10px 0 10px;
-    min-width: 500px;
-    width: 40%;
 }
 
 .menu a{
@@ -37,9 +25,7 @@ header{
     white-space: nowrap;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 25%;
     font-weight: bold;
-    padding: 5px;
 }
 
 .menu .active{
@@ -78,6 +64,7 @@ footer{
 }
 
 footer .contact{
+    justify-content: center;
     padding: 10px 10%;
 }
 
@@ -100,9 +87,40 @@ footer a{
 
 .top_footer .line{
     width: 1px;
+    min-width: 1px;
     background-color: #F2F4F3;
     height: 150px;
-    margin: 25px 5%;
+    margin: 25px 0 25px 0;
+}
+
+.top_footer #photo{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+}
+
+.quote_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10%;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.quote{
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.quote .name_author{
+    text-align: right;
+    font-style: normal;
 }
 
 .bottom_footer{
@@ -110,4 +128,160 @@ footer a{
     justify-content: center;
     padding: 10px;
     background-color: #0A0908;
+}
+
+@media screen and (min-width: 1200px){
+    header{
+        height: 130px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile{
+        min-width: 360px;
+    }
+
+    .profile h1{
+        padding: 10px 10px 0 20px;
+    }
+
+    .menu{
+        padding: 80px 10px 0 10px;
+        display: flex;
+        min-width: 500px;
+        width: 40%;
+
+    }
+
+    .menu a{
+        padding: 5px;
+        width: 25%;
+    }
+
+    footer .contact{
+        min-width: 200px;
+    }
+
+    .quote_div{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px){
+    .profile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile h1{
+        padding: 0 20px;
+    }
+
+    .menu{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+
+    }
+
+    footer .contact{
+        min-width: 200px;
+    }
+
+    .menu a{
+        padding: 10px;
+        width: 21%;
+    }
+
+    .pc{
+        display: none;
+    }
+
+    .contact{
+        text-align: center;
+    }
+
+    .contact h2{
+        font-size: 35px;
+    }
+
+    .mobile{
+        display: inline;
+    }
+
+    .mobile svg{
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .profile{
+        display: block;
+        text-align: center;
+        min-width: none;
+    }
+
+    .profile h1{
+        padding: 0 20px;
+    }
+
+    .menu{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        min-width: none;
+    }
+
+    .menu a{
+        padding: 20px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-top: solid 1px #a9927d;
+    }
+
+    .menu .active{
+        background-color: #a9927d;
+        color: #F2F4F3;
+        margin: 0;
+    }
+
+    footer{
+        min-width: none;
+    }
+
+    .contact{
+        min-width: none;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contact h2{
+        font-size: 40px;
+    }
+
+    .pc{
+        display: none;
+    }
+
+    .mobile{
+        display: inline;
+    }
+
+    .mobile svg{
+        height: 50px;
+        width: 50px;
+    }
+
+    .top_footer{
+        display: block;
+        height: auto;
+    }
+
+    .top_footer .line{
+        width: auto;
+        height: 1px;
+        margin: 0 25px 0 25px;
+    }
 }
