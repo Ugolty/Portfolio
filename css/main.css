@@ -1,5 +1,5 @@
 *{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Roboto";
 }
 
 header{
@@ -111,14 +111,14 @@ footer a{
 }
 
 .quote{
-    font-style: italic;
+    font-style: normal;
     font-size: 20px;
     margin-top: 40px;
 }
 
 .quote .name_author{
     text-align: right;
-    font-style: normal;
+    font-style: italic;
 }
 
 .bottom_footer{
@@ -156,7 +156,10 @@ footer a{
         width: 25%;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+    }
 
+    .menu a:hover:not(.active){
+        margin-top: -8px;
     }
 
     footer .contact{

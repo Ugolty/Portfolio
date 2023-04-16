@@ -1,0 +1,33 @@
+
+.body{
+    margin : 75px 0;
+}
+
+@media screen and (min-width: 1200px){
+    
+    .bloc{
+        display: flex;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: 70px 0;
+    }
+
+    .illustration{
+        width: 60%;
+        height: 100%;
+    }
+
+    .illustration img{
+        width: 100%;
+        display: block;
+    }
+
+    .resume{
+        margin: 20px;
+        width: 40%;
+    }
+
+    .resume h1{
+        margin-top: 0;
+    }
+
+}
